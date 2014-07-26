@@ -415,7 +415,7 @@ static boolean checkSum (char ch)
         }
     }                
     
-    public static void main()
+    public static void main(String[]args)
     {
             
             int r=randomRowGenerator();
