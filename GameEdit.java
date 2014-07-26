@@ -367,13 +367,13 @@ static boolean checkSum (char ch)
             {
                 if(game[i][j]!=0)
                 {
-                    for(int k=i-1; k>=0; k--)
+                    for(int k=j-1; k>=0; k--)
                     {
-                        if(game[k][j]!=0)
+                        if(game[i][k]!=0)
                         {
-                            if(game[k][j]==game[i][j])
+                            if(game[i][k]==game[i][j])
                             {
-                                game[k][j]+=game[i][j];
+                                game[i][k]+=game[i][j];
                                 game[i][j]=0;
                                 moveLeft(i);
                             }
